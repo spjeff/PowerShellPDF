@@ -82,11 +82,11 @@ Function MergePDF($filePattern) {
 
 # from https://github.com/escottj/Doc2PDF/blob/master/Doc2PDF.ps1
 #Define Office Formats
-$Wrd_Array = '*.docx', '*.doc', '*.odt', '*.rtf', '*.txt', '*.wpd'
-$Exl_Array = '*.xlsx', '*.xls', '*.ods', '*.csv'
-$Pow_Array = '*.pptx', '*.ppt', '*.odp'
-$Pub_Array = '*.pub'
-$Vis_Array = '*.vsdx', '*.vsd', '*.vssx', '*.vss'
+$Wrd_Array = @('*.DOCX', '*.DOC', '*.ODT', '*.RTF', '*.TXT', '*.WPD')
+$Exl_Array = @('*.XLSX', '*.XLS', '*.ODS', '*.CSV')
+$Pow_Array = @('*.PPTX', '*.PPT', '*.ODP')
+$Pub_Array = @('*.PUB')
+$Vis_Array = @('*.VSDX', '*.VSD', '*.VSSX', '*.VSS')
 $Off_Array = $Wrd_Array + $Exl_Array + $Pow_Array + $Pub_Array + $Vis_Array
 
  
@@ -262,19 +262,19 @@ Function ConvertFile($Ext, $filepath) {
 
     # Extension support
     switch ($Ext) {
-        ".DOC" { Wrd-Chk $File $Ext $PDF ; break; }
-        ".DOCX" { Wrd-Chk $File $Ext $PDF ; break; }
-        ".RTF" { Wrd-Chk $File $Ext $PDF ; break; }
-        ".TXT" { Wrd-Chk $File $Ext $PDF ; break; }
-        ".CSV" { Exl-Chk $File $Ext $PDF ; break; }
-        ".XLS" { Exl-Chk $File $Ext $PDF ; break; }
-        ".XLSX" { Exl-Chk $File $Ext $PDF ; break; }
-        ".PPT" { Pow-Chk $File $Ext $PDF ; break; }
-        ".PPTX" { Pow-Chk $File $Ext $PDF ; break; }
+        # ".DOC" { Wrd-Chk $File $Ext $PDF ; break; }
+        # ".DOCX" { Wrd-Chk $File $Ext $PDF ; break; }
+        # ".RTF" { Wrd-Chk $File $Ext $PDF ; break; }
+        # ".TXT" { Wrd-Chk $File $Ext $PDF ; break; }
+        # ".CSV" { Exl-Chk $File $Ext $PDF ; break; }
+        # ".XLS" { Exl-Chk $File $Ext $PDF ; break; }
+        # ".XLSX" { Exl-Chk $File $Ext $PDF ; break; }
+        # ".PPT" { Pow-Chk $File $Ext $PDF ; break; }
+        # ".PPTX" { Pow-Chk $File $Ext $PDF ; break; }
         ".PUB" { Pub-Chk $File $Ext $PDF ; break; }
-        ".VSD" { Vis-Chk $File $Ext $PDF ; break; }
-        ".VSDX" { Vis-Chk $File $Ext $PDF ; break; }
-        ".VSS" { Vis-Chk $File $Ext $PDF ; break; }
+        # ".VSD" { Vis-Chk $File $Ext $PDF ; break; }
+        # ".VSDX" { Vis-Chk $File $Ext $PDF ; break; }
+        # ".VSS" { Vis-Chk $File $Ext $PDF ; break; }
     }
 }
 
