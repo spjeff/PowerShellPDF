@@ -280,7 +280,7 @@ Function ConvertFile($Ext, $filepath) {
 
 # Main
 function Main() {
-    Write-Host "CONVERT DOCX TO PDF" -Fore Yellow
+    Write-Host "CONVERT MS OFFICE TO PDF" -Fore Yellow
     Convert "INPUT"
 
     Write-Host "MERGE PDFS TO COMBINED.PDF" -Fore Yellow
