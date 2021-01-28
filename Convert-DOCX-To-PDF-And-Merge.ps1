@@ -262,19 +262,19 @@ Function ConvertFile($Ext, $filepath) {
 
     # Extension support
     switch ($Ext) {
-        # ".DOC" { Wrd-Chk $File $Ext $PDF ; break; }
-        # ".DOCX" { Wrd-Chk $File $Ext $PDF ; break; }
-        # ".RTF" { Wrd-Chk $File $Ext $PDF ; break; }
-        # ".TXT" { Wrd-Chk $File $Ext $PDF ; break; }
-        # ".CSV" { Exl-Chk $File $Ext $PDF ; break; }
-        # ".XLS" { Exl-Chk $File $Ext $PDF ; break; }
-        # ".XLSX" { Exl-Chk $File $Ext $PDF ; break; }
-        # ".PPT" { Pow-Chk $File $Ext $PDF ; break; }
-        # ".PPTX" { Pow-Chk $File $Ext $PDF ; break; }
+        ".DOC" { Wrd-Chk $File $Ext $PDF ; break; }
+        ".DOCX" { Wrd-Chk $File $Ext $PDF ; break; }
+        ".RTF" { Wrd-Chk $File $Ext $PDF ; break; }
+        ".TXT" { Wrd-Chk $File $Ext $PDF ; break; }
+        ".CSV" { Exl-Chk $File $Ext $PDF ; break; }
+        ".XLS" { Exl-Chk $File $Ext $PDF ; break; }
+        ".XLSX" { Exl-Chk $File $Ext $PDF ; break; }
+        ".PPT" { Pow-Chk $File $Ext $PDF ; break; }
+        ".PPTX" { Pow-Chk $File $Ext $PDF ; break; }
         ".PUB" { Pub-Chk $File $Ext $PDF ; break; }
-        # ".VSD" { Vis-Chk $File $Ext $PDF ; break; }
-        # ".VSDX" { Vis-Chk $File $Ext $PDF ; break; }
-        # ".VSS" { Vis-Chk $File $Ext $PDF ; break; }
+        ".VSD" { Vis-Chk $File $Ext $PDF ; break; }
+        ".VSDX" { Vis-Chk $File $Ext $PDF ; break; }
+        ".VSS" { Vis-Chk $File $Ext $PDF ; break; }
     }
 }
 
